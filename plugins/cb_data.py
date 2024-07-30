@@ -162,3 +162,5 @@ async def vid(bot, update):
 @Client.on_callback_query(filters.regex("aud"))
 async def aud(bot, update):
     await handle_file_download_and_upload(update, 'aud')
+
+app.run()
